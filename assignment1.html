@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ASSIGNMENT</title>
+  <style>
+    body{
+      background-image: url("/images/1600w-R7C1leVURoQ.webp");
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid hwb(0 9% 90%);
+      text-align: left;
+      padding: 8px;
+      background-color: hsl(207, 50%, 72%);
+    }
+    img{
+      width:200px;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color: #d62a2a;font-size: 300%; text-align: center;";>ASSIGNMENT 1</h1>
+  <main>
+    <section style="color: beige;">
+      <div class="thumbnail"><img src="images/background_image.webp"></div>
+        <div class="blog-content">
+          <h3>FULL STACK DEVELOPEMENT</h3>
+          <P id="abcdeId" class="author">Published by abc</P>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim voluptas dolor sit 
+              numquam culpa eligendi porro magni excepturi quibusdam, ex quas atque corporis perspiciatis, 
+              maxime nesciunt quaerat, blanditiis quia molestias.</p>
+          </div>
+    </section>
+    <section style="color: beige;">
+      <div class="thumbnail"><img src="images/background_image.webp"></div>
+        <div class="blog-content">
+          <h2>FULL STACK DEVELOPEMENT</h2>
+          <P id="abcdeId" class="author">Published by abc</P>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim voluptas dolor 
+              sit numquam culpa eligendi porro magni excepturi quibusdam, ex quas atque corporis perspiciatis,
+               maxime nesciunt quaerat, blanditiis quia molestias.</p>
+          </div>
+    </section>
+    <section style="color: beige;">
+      <div class="thumbnail"><img src="images/background_image.webp"></div>
+        <div class="blog-content">
+          <h2>FULL STACK DEVELOPEMENT</h2>
+          <P id="abcdeId" class="author">Published by abc</P>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim 
+              voluptas dolor sit numquam culpa eligendi porro magni excepturi quibusdam,
+               ex quas atque corporis perspiciatis, maxime nesciunt quaerat, blanditiis quia molestias.</p>
+          
+          </div>
+    </section>
+  </main>
+  <table>
+    <div class="contentArea">
+        <div>
+            <p style="color: beige;">COMPLETE ASSIGNMENT 1</p>
+        </div>
+
+    </div>
+    <img src="https://images.unsplash.com/photo-1603984973710-e915353b35fa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <picture>
+        <source media="(min-width:300px)" srcset="https://images.unsplash.com/photo-1603984973710-e915353b35fa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    </picture>
+    <thead>
+      <tr style="color: #0f0f05;">
+        <th>User ID</th>
+        <th>Username</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="color: #18180e;">
+        <td>1</td>
+        <td>div</td>
+        <td>div15@example.com</td>
+      </tr>
+      <tr style="color: rgb(14, 14, 12);">
+        <td>2</td>
+        <td>deep</td>
+        <td>deep12@example.com</td>
+      </tr>
+      <tr style="color: rgb(14, 14, 10);">
+        <td>3</td>
+        <td>anna</td>
+        <td>anna134@example.com</td>
+      </tr>
+      <tr style="color: rgb(14, 14, 10);">
+        <td>4</td>
+        <td>anshu</td>
+        <td>anshu444@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <header>
+  <footer>
+    <h1>Footer</h1>
+  </footer>
+  <script>
+      var x=document.getElementById('abcdeId')
+      x.style.color="red"
+      var y=document.getElementsByTagName('h3')
+      for (var i = 0; i < y.length; i++) {
+      y[i].style.backgroundColor="purple"
+      y[i].style.border="5px solid blue"}
+      var z=document.getElementById("abcdeId")
+      z.style.fontSize="30px"
+      z.style.fontFamily="Lucida Sans"
+      var authorElement=document.querySelectorAll(".author")
+      for(var i=0;i<authorElement.length;i++){
+        authorElement[i].style.fontSize="40px";
+        authorElement[i].style.fontStyle="italic";
+        authorElement[i].style.fontStyle="bold";
+        if(i%2==0){
+          authorElement[i].style.color="red"
+        }
+        else{
+          authorElement[i].style.color="green"
+        }
+      }
+  </script>
+</body>
+</html>
