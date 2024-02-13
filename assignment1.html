@@ -116,13 +116,17 @@
         authorElement[i].style.fontSize="40px";
         authorElement[i].style.fontStyle="italic";
         authorElement[i].style.fontStyle="bold";
+        authorElement[i].addEventListener("click",function(){
+          alert("divzz")
+        })
         if(i%2==0){
           authorElement[i].style.color="red"
         }
         else{
-          authorElement[i].style.color="green"
+          authorElement[i].style.color="blue"
         }
       }
+  
   </script>
 </body>
 </html>
