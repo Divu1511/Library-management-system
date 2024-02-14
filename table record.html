@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Records</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #b41717;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: hwb(69 56% 3%);
+    }
+</style>
+</head>
+<body>
+
+<h2> CGC Staff Records</h2>
+
+<table id="staffTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Department</th>
+            <th>Admission Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>deepanshu</td>
+            <td>deep098@example.com</td>
+            <td>30</td>
+            <td>Marketing</td>
+            <td>2022-05-15</td>
+        </tr>
+        <tr>
+            <td>aman </td>
+            <td>aman12@example.com</td>
+            <td>25</td>
+            <td>Marketing</td>
+            <td>1999-10-15</td>
+          </tr>
+          <tr>
+            <td>hari</td>
+            <td>hariii89@example.com</td>
+            <td>35</td>
+            <td>Human Resources</td>
+            <td>2020-07-03</td>
+          </tr>
+          <tr>
+            <td>ram</td>
+            <td>ram890@example.com</td>
+            <td>28</td>
+            <td>Engineering</td>
+            <td>2021-12-28</td>
+          </tr>
+          <tr>
+            <td>rishav</td>
+            <td>rishava6789@example.com</td>
+            <td>32</td>
+            <td>Finance</td>
+            <td>2021-03-10</td>
+          </tr>
+          <tr>
+            <td>rahul</td>
+            <td>rahul098@example.com</td>
+            <td>27</td>
+            <td>Marketing</td>
+            <td>2020-09-05</td>
+          </tr>
+          <tr>
+            <td>krishaa</td>
+            <td>krishaa123@example.com</td>
+            <td>40</td>
+            <td>Engineering</td>
+            <td>2024-11-18</td>
+          </tr>
+          <tr>
+            <td>priyanka</td>
+            <td>priyanka345@example.com</td>
+            <td>29</td>
+            <td>Human Resources</td>
+            <td>2021-04-22</td>
+          </tr>
+          <tr>
+            <td>shagun</td>
+            <td>shagun678@example.com</td>
+            <td>33</td>
+            <td>Finance</td>
+            <td>2023-08-14</td>
+          </tr>
+          <tr>
+            <td>divuu</td>
+            <td>divuu1234@example.com</td>
+            <td>31</td>
+            <td>Marketing</td>
+            <td>2023-01-30</td>
+          </tr>
+    </tbody>
+</table>
+
+<p id="departmentCount"></p>
+
+<script>
+    function countEmployeesByDepartment() {
+        var table = document.getElementById('staffTable');
+        var rows = table.getElementsByTagName('tr');
+        var departmentCounts = {};
+
+        for (var i = 1; i < rows.length; i++) {
+            var department = rows[i].getElementsByTagName('td')[3].innerText;
+            if (departmentCounts[department]) {
+                departmentCounts[department]++;
+            } else {
+                departmentCounts[department] = 1;
+            }
+        }
+
+        var output = "Employee count by department:<br>";
+        for (var dept in departmentCounts) {
+            output += dept + ": " + departmentCounts[dept] + "<br>";
+        }
+        
+        document.getElementById('departmentCount').innerHTML = output;
+    }
+   
+    countEmployeesByDepartment();
+    
+</script>
+
+</body>
+</html>
